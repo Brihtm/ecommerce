@@ -1,9 +1,9 @@
 from flask import Blueprint
 
 auth_bp = Blueprint(
-    'public', 
-    __name__, 
-    template_folder='../../template_folder/public'
+    'auth',
+    __name__,
+    template_folder='../../templates/auth'
 )
 
 from . import routes

@@ -1,10 +1,10 @@
 from flask import render_template
 from . import auth_bp
 
-@public_bp.route('/login')
+@auth_bp.route('/auth/login')
 def login():
     return render_template('auth/login.html')
 
-@public_bp.route('/registro')
-def tienda():
+@auth_bp.route('/auth/registro')
+def registro():
     return render_template('auth/registro.html')
