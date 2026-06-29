@@ -15,6 +15,9 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
+    #Models
+    from app.models import Usuario
+
     #Blueprints
     #agregando a un factory
     from app.blueprints.public import public_bp
